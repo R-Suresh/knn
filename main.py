@@ -19,4 +19,4 @@ knn = KNeighborsClassifier(k=k)
 
 knn.fit(X_train, y_train)
 y_pred_test = knn.predict(X_test)
-print("Accuracy of KNN test set:", knn.score(X_test, y_test))
+print("Accuracy of KNN test set:", knn.score(y_pred_test, y_test))
